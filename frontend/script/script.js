@@ -2,7 +2,7 @@ const buttonPages = document.querySelectorAll(".button-page");
 const contentPage = document.querySelector("#main-content");
 const formUploadModul = document.querySelector("#uploadModulForm");
 const pages = document.querySelectorAll(".sect");
-console.log(formUploadModul);
+const buttonSubmit = document.querySelector("#submitButton");
 
 buttonPages.forEach((btnPage) => {
   btnPage.addEventListener("click", (e) => {
@@ -24,16 +24,16 @@ buttonPages.forEach((btnPage) => {
 formUploadModul.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  const formData = new FormData(formUploadModul);
-
   try {
+    const formData = new FormData(formUploadModul);
+
     await fetch("http://localhost:4000/materi-modul", {
       method: "POST",
       body: formData,
     });
 
     alert("data berhasil di inputkan");
-    // formUploadModul.reset();
+    formUploadModul.reset();
   } catch (err) {
     console.error("Error:", err);
     alert("Terjadi kesalahan saat mengirim data.");
