@@ -84,8 +84,8 @@ app.post("/materi-modul", upload.single("file_modul"), (req, res) => {
 
   const file_modul = req.file.filename;
 
-  console.log(req.body);
-  console.log(req.file);
+  // console.log(req.body);
+  // console.log(req.file);
 
   const query = `INSERT INTO table_modul_pembelajaran (nama_pengajar, judul_modul, file_modul, mata_pelajaran, tingkat_sekolah, tanggal_upload) VALUES ('${nama_pengajar}','${judul_modul}','${file_modul}', '${mata_pelajaran}', '${tingkat_sekolah}', '${tanggal_upload}')`;
 

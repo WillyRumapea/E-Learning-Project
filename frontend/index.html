@@ -41,36 +41,146 @@
             class="border text-center h-1/2 flex items-center justify-around flex-col gap-4"
           >
             <li>
-              <button
+              <a
+                href="#HOME"
                 class="border-[1.3px] border-slate-400 bg-sky-300 rounded-lg w-[30vh] button-page"
-                data-page="home.html"
               >
                 Home
-              </button>
+              </a>
             </li>
             <li>
-              <button
+              <a
+                href="#PROFILE"
                 class="border-[1.3px] border-slate-400 bg-sky-300 rounded-lg w-[30vh] button-page"
-                data-page="profile.html"
               >
                 Profile
-              </button>
+              </a>
             </li>
             <li>
-              <button
+              <a
+                href="#COURSE"
                 class="border-[1.3px] border-slate-400 bg-sky-300 rounded-lg w-[30vh] button-page"
-                data-page="course.html"
               >
                 Course
-              </button>
+              </a>
             </li>
           </ul>
         </div>
-        <div class="border" id="main-content"></div>
+        <div class="border border-red-500 w-[99%] p-5" id="main-content">
+          <section class="h-[98%] border sect" id="HOME">
+            <h1>Home</h1>
+            <p>ini adalah home</p>
+          </section>
+          <section class="hidden sect" id="PROFILE">
+            <h1>Profile</h1>
+            <p>ini adalah profile</p>
+          </section>
+          <section class="hidden sect" id="COURSE">
+            <h2>Course</h2>
+            <form action="" id="uploadModulForm">
+              <div
+                class="wrapper-input grid grid-cols-1 w-3/4 mx-auto p-4 gap-1"
+              >
+                <label
+                  for="nama_pengajar"
+                  class="font-parkinsan font-thin text-sm"
+                  >Nama Pengajar</label
+                >
+                <input
+                  type="text"
+                  id="nama_pengajar"
+                  name="nama_pengajar"
+                  class="border-slate-400 border-[1.3px] rounded-lg p-[0.8px] text-center font-parkinsan text-[12px]"
+                />
+              </div>
+              <div
+                class="wrapper-input grid grid-cols-1 w-3/4 mx-auto p-4 gap-1"
+              >
+                <label
+                  class="font-parkinsan font-thin text-sm"
+                  for="judul_modul"
+                  >Judul Modul</label
+                >
+                <input
+                  type="text"
+                  id="judul_modul"
+                  name="judul_modul"
+                  class="border-slate-400 border-[1.3px] rounded-lg p-[0.8px] text-center font-parkinsan text-[12px]"
+                />
+              </div>
+              <div
+                class="wrapper-input grid grid-cols-1 w-3/4 mx-auto p-4 gap-1"
+              >
+                <label class="font-parkinsan font-thin text-sm" for="file_modul"
+                  >File Modul</label
+                >
+                <input
+                  type="file"
+                  id="file_modul"
+                  name="file_modul"
+                  class="border-slate-400 border-[1.3px] rounded-lg p-[0.8px] text-center font-parkinsan text-[12px]"
+                />
+              </div>
+              <div
+                class="wrapper-input grid grid-cols-1 w-3/4 mx-auto p-4 gap-1"
+              >
+                <label
+                  class="font-parkinsan font-thin text-sm"
+                  for="mata_pelajaran"
+                  >Mata Pelajaran</label
+                >
+                <input
+                  type="text"
+                  id="mata_pelajaran"
+                  name="mata_pelajaran"
+                  class="border-slate-400 border-[1.3px] rounded-lg p-[0.8px] text-center font-parkinsan text-[12px]"
+                />
+              </div>
+              <div
+                class="wrapper-input grid grid-cols-1 w-3/4 mx-auto p-4 gap-1"
+              >
+                <label
+                  class="font-parkinsan font-thin text-sm"
+                  for="tingkat_sekolah"
+                  >Tingkat Sekolah</label
+                >
+                <input
+                  type="text"
+                  id="tingkat_sekolah"
+                  name="tingkat_sekolah"
+                  class="border-slate-400 border-[1.3px] rounded-lg p-[0.8px] text-center font-parkinsan text-[12px]"
+                />
+              </div>
+              <div
+                class="wrapper-input grid grid-cols-1 w-3/4 mx-auto p-4 gap-1"
+              >
+                <label
+                  class="font-parkinsan font-thin text-sm"
+                  for="tanggal_upload"
+                  >Tanggal Upload</label
+                >
+                <input
+                  type="datetime-local"
+                  id="tanggal_upload"
+                  name="tanggal_upload"
+                  class="border-slate-400 border-[1.3px] rounded-lg p-[0.8px] text-center font-parkinsan text-[12px]"
+                />
+              </div>
+              <div class="cont-button text-center">
+                <button
+                  type="submit"
+                  class="border border-slate-100 roundedxl bg-sky-300 text-white w-[130px] font-parkinsan"
+                >
+                  Upload
+                </button>
+              </div>
+            </form>
+          </section>
+        </div>
       </section>
     </main>
     <!-- script js -->
-    <script src="script/script.js"></script>
+    <script src="./script/script.js"></script>
     <!-- script js -->
   </body>
 </html>
