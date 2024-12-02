@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- style tailwind -->
+    <link rel="stylesheet" href="../style/style.css" />
+    <!-- style tailwind -->
+  </head>
+  <body>
+    <form
+      id="form-update-profile"
+      action=""
+      class="bg-slate-500 mx-auto w-3/4 rounded-md p-10 flex flex-col gap-5"
+    >
+      <h1 class="font-parkinsan text-xl font-bold text-center text-slate-200">
+        Silahkan ubah data dengan sesuai
+      </h1>
+      <div class="wrapper-input grid grid-row-2 place-items-center">
+        <label
+          for="nama_pengajar"
+          class="block text-left text-[12px] font-parkinsan"
+          >Nama Pengajar</label
+        >
+        <input
+          type="text"
+          name="nama_pengajar"
+          id="nama-pengajar"
+          class="bg-slate-50 rounded-md font-parkinsans w-3/4"
+        />
+      </div>
+      <div class="wrapper-input grid grid-row-2 place-items-center">
+        <label
+          for="alamat-email"
+          class="block text-left text-[12px] font-parkinsan"
+          >Alamat Email</label
+        >
+        <input
+          type="text"
+          name="alamat_email"
+          id="alamat-email"
+          class="bg-slate-50 rounded-md font-parkinsans w-3/4"
+        />
+      </div>
+      <div class="wrapper-input grid grid-row-2 place-items-center">
+        <label
+          for="tanggal-lahir"
+          class="block text-left text-[12px] font-parkinsan"
+          >Tanggal Lahir</label
+        >
+        <input
+          type="date"
+          name="tanggal_lahir"
+          id="tanggal-lahir"
+          class="bg-slate-50 rounded-md font-parkinsans w-3/4"
+        />
+      </div>
+      <div class="wrapper-input grid grid-row-2 place-items-center">
+        <label
+          for="no-telepon"
+          class="block text-left text-[12px] font-parkinsan"
+          >No Telpon</label
+        >
+        <input
+          type="number"
+          name="no_telepon"
+          id="no-telepon"
+          class="bg-slate-50 rounded-md font-parkinsans w-3/4"
+        />
+      </div>
+      <div class="wrapper-input grid grid-row-2 place-items-center">
+        <label for="jabatan" class="block text-left text-[12px] font-parkinsan"
+          >Jabatan</label
+        >
+        <input
+          type="text"
+          name="jabatan"
+          id="jabatan"
+          class="bg-slate-50 rounded-md font-parkinsans w-3/4"
+        />
+      </div>
+      <div class="wrapper-input grid grid-row-2 place-items-center">
+        <label
+          for="mata-pelajaran"
+          class="block text-left text-[12px] font-parkinsan"
+          >Mata Pelajaran</label
+        >
+        <input
+          type="text"
+          name="mata_pelajaran"
+          id="mata-pelajaran"
+          class="bg-slate-50 rounded-md font-parkinsans w-3/4"
+        />
+      </div>
+      <div class="cont-button flex gap-5">
+        <button
+          type="submit"
+          class="font-parkinsan text-white bg-slate-700 p-2 rounded-md mx-auto block"
+        >
+          ubah!!
+        </button>
+        <button
+          id="cancelBackForm"
+          type="submit"
+          class="font-parkinsan text-black bg-slate-200 p-2 rounded-md mx-auto block"
+        >
+          batal
+        </button>
+      </div>
+    </form>
+    <!-- script js -->
+    <script src="../script/ubahDataProfile.js"></script>
+    <!-- script js -->
+  </body>
+</html>

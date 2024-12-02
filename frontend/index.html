@@ -74,13 +74,16 @@
                     src=""
                     alt=""
                     class="rounded-full w-[140px] h-[140px] border border-slate-400 inline-block bg-cover mx-auto"
+                    id="profileImg"
                   />
                 </div>
                 <button
                   class="border border-slate-500 text-black w-[120px] h-[30px] inline-block rounded-lg font-parkinsan text-sm mx-auto"
+                  id="changeImgButton"
                 >
-                  change photo
+                  ubah foto
                 </button>
+                <input type="file" class="hidden" id="changeImgInput" />
               </div>
             </div>
             <div
@@ -90,7 +93,10 @@
                 <label for="" class="block text-left text-[12px] font-parkinsan"
                   >Nama Pengajar</label
                 >
-                <p class="bg-slate-50 rounded-md font-parkinsan">
+                <p
+                  class="bg-slate-50 rounded-md font-parkinsan"
+                  id="profile-nama"
+                >
                   Lorem, ipsum.
                 </p>
               </div>
@@ -98,7 +104,10 @@
                 <label for="" class="block text-left text-[12px] font-parkinsan"
                   >Alamat Email</label
                 >
-                <p class="bg-slate-50 rounded-md font-parkinsan">
+                <p
+                  class="bg-slate-50 rounded-md font-parkinsan"
+                  id="profile-email"
+                >
                   lorem@gmail.com
                 </p>
               </div>
@@ -106,7 +115,10 @@
                 <label for="" class="block text-left text-[12px] font-parkinsan"
                   >Tanggal Lahir</label
                 >
-                <p class="bg-slate-50 rounded-md font-parkinsan">
+                <p
+                  class="bg-slate-50 rounded-md font-parkinsan"
+                  id="profile-ttl"
+                >
                   13 Oktober 1997
                 </p>
               </div>
@@ -114,27 +126,47 @@
                 <label for="" class="block text-left text-[12px] font-parkinsan"
                   >No Telpon</label
                 >
-                <p class="bg-slate-50 rounded-md font-parkinsan">+6234389289</p>
+                <p
+                  class="bg-slate-50 rounded-md font-parkinsan"
+                  id="profile-telpon"
+                >
+                  +6234389289
+                </p>
               </div>
               <div class="wrapper-data-profile w-80">
                 <label for="" class="block text-left text-[12px] font-parkinsan"
                   >Jabatan</label
                 >
-                <p class="bg-slate-50 rounded-md font-parkinsan">Guru SD</p>
+                <p
+                  class="bg-slate-50 rounded-md font-parkinsan"
+                  id="profile-jabatan"
+                >
+                  Guru SD
+                </p>
               </div>
               <div class="wrapper-data-profile w-80">
                 <label for="" class="block text-left text-[12px] font-parkinsan"
                   >Mata Pelajaran</label
                 >
-                <p class="bg-slate-50 rounded-md font-parkinsan">Matematika</p>
+                <p
+                  class="bg-slate-50 rounded-md font-parkinsan"
+                  id="profile-mapel"
+                >
+                  Matematika
+                </p>
               </div>
-              <div class="wrapper-button">
+              <div class="wrapper-button w-full">
                 <button
                   class="w-[120px] h-[40px] border border-slate-300 bg-slate-600 text-white rounded-xl"
+                  id="uploadProfile"
                 >
-                  Changes Data
+                  Ubah Data
                 </button>
               </div>
+              <!-- <div
+                id="container-form-update-profile"
+                class="z-10 -translate-y-[120vh] w-full hidden"
+              ></div> -->
             </div>
           </section>
           <section class="hidden sect" id="COURSE">
